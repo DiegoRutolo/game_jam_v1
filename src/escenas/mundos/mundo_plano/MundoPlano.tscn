@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/escenas/jugador/Jugador.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="MundoPlano" type="Node2D"]
+
+[node name="Suelo" type="StaticBody2D" parent="."]
+position = Vector2( 497.113, 537.431 )
+scale = Vector2( -71.3238, 8.29299 )
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo"]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Suelo"]
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+color = Color( 0.105882, 0.647059, 0.164706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 151.321, 155.564 )
+
+[node name="Obstaculos" type="Node" parent="."]
+
+[node name="Pared1" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2( 1003.4, 287.116 )
+rotation = -3.14159
+scale = Vector2( 5.3807, 22.6418 )
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstaculos/Pared1"]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Obstaculos/Pared1"]
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+color = Color( 0.121569, 0.501961, 0.164706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pared3" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2( -144.94, 295.601 )
+rotation = -3.14159
+scale = Vector2( 5.3807, 22.6418 )
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstaculos/Pared3"]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Obstaculos/Pared3"]
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+color = Color( 0.121569, 0.501961, 0.164706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pared2" type="StaticBody2D" parent="Obstaculos"]
+position = Vector2( 675.304, 452.579 )
+rotation = -3.14159
+scale = Vector2( 2.63936, 6.92913 )
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstaculos/Pared2"]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Obstaculos/Pared2"]
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+color = Color( 0.121569, 0.501961, 0.164706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -9,19 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "",
+"base": "KinematicBody2D",
+"class": "Actor",
+"language": "GDScript",
+"path": "res://src/escenas/jugador/Actor.gd"
+}, {
+"base": "EditorVCSInterface",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://git_api.gdns"
 } ]
 _global_script_class_icons={
+"Actor": "",
 "GitAPI": ""
 }
 
 [application]
 
 config/name="game_jam_v1"
-run/main_scene="res://src/escenas/mundos/mundo_1/Mundo_1.tscn"
+run/main_scene="res://src/escenas/mundos/mundo_plano/MundoPlano.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
@@ -32,9 +38,39 @@ singletons=[ "res://git_api.gdnlib" ]
 
 grid=true
 
+[input]
+
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+duck={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_physics/layer_1="mundo"
+2d_physics/layer_2="objetos"
+2d_physics/layer_3="jugador"
+
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/default_gravity=10
 
 [rendering]
 
