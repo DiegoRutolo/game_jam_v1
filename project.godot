@@ -14,7 +14,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/escenas/jugador/Actor.gd"
 }, {
-"base": "EditorVCSInterface",
+"base": "",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://git_api.gdns"
@@ -27,8 +27,9 @@ _global_script_class_icons={
 [application]
 
 config/name="game_jam_v1"
-run/main_scene="res://src/escenas/mundos/mundo_plano/MundoPlano.tscn"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+<<<<<<<Updatedupstreamrun/main_scene="res://src/escenas/mundos/mundo_plano/MundoPlano.tscn"
 
 [gdnative]
 
