@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tiles_spritesheet.png-fcd0b21b337895c931078ea9a3798bf5.stex"
+path="res://.import/tiles_spritesheet_mundo_1.png-bd2479132751faf3cef44dac09ddc695.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Platformer Art Complete Pack/Base pack/Tiles/tiles_spritesheet.png"
-dest_files=[ "res://.import/tiles_spritesheet.png-fcd0b21b337895c931078ea9a3798bf5.stex" ]
+source_file="res://assets/sprites/mundos/mundo_1/tiles_spritesheet_mundo_1.png"
+dest_files=[ "res://.import/tiles_spritesheet_mundo_1.png-bd2479132751faf3cef44dac09ddc695.stex" ]
 
 [params]
 

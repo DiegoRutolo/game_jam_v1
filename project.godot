@@ -21,11 +21,16 @@ _global_script_class_icons={
 [application]
 
 config/name="game_jam_v1"
+run/main_scene="res://src/escenas/mundos/mundo_1/Mundo_1.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
+
+[global]
+
+grid=true
 
 [physics]
 
