@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/escenas/jugador/Jugador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/objetos/Portal.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -85,3 +86,7 @@ color = Color( 0.121569, 0.501961, 0.164706, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Portal" parent="." instance=ExtResource( 2 )]
+position = Vector2( 823.988, 451.052 )
+siguiente_mundo = "res://src/escenas/mundos/mundo_1/Mundo_1.tscn"
