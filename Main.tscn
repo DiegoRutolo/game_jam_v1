@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/escenas/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/escenas/mundos/mundo_1/Mundo_1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/escenas/jugador/Jugador.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/objetos/Inventario.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Node2D"]
 
@@ -12,3 +13,5 @@
 
 [node name="Jugador" parent="." instance=ExtResource( 3 )]
 position = Vector2( 280, 385 )
+
+[node name="Inventario" parent="." instance=ExtResource( 4 )]

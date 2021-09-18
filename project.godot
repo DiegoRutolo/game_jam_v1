@@ -31,6 +31,10 @@ run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 <<<<<<<Updatedupstreamrun/main_scene="res://src/escenas/mundos/mundo_plano/MundoPlano.tscn"
 
+[autoload]
+
+Inventario="*res://src/objetos/Inventario.tscn"
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
